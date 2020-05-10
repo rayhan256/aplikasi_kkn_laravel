@@ -18,3 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('/Admin', 'AdminController@index');
+Route::get('/Admin/Mahasiswa', 'AdminController@read_mahasiswa');
+Route::get('/Admin/UpdateMahasiswa/{id_mhs}', 'AdminController@update_mahasiswa_v');
+Route::post('/Admin/UpdateMahasiswa/Proses', 'AdminController@update_mahasiswa');
